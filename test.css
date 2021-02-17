@@ -24,8 +24,12 @@ header nav{
 header h3.logo{
 	padding-left: 0.5rem;
 	align-self: center;
-	padding-right: 0.5rem;
+	padding-right: 0.8rem;
+	max-width: 10%;
 
+}
+header h3.logo img{
+	width: 95%;
 }
 
 header nav ul{
@@ -170,6 +174,9 @@ header nav ul li a{
 	.container .googleform-container iframe{
 		height: 250vh;
 		width: 100%;
+	}
+	header h3.logo{
+		max-width: 18%;
 	}
 }
 @media only screen and (max-width: 320px){
