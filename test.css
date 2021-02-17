@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif !important;
+	background-color: #add8e6;
+}
+header{
+	width: 100%;
+	padding: 1rem 0;
+	background: #add8e6;
+	color: black;
+	display: flex;
+}
+header nav{
+	width: 60%;
+	align-self: center;
+	float: right;
+	border-left: 1px solid #121212;
+	
+}
+header h3.logo{
+	padding-left: 0.5rem;
+	align-self: center;
+	padding-right: 0.5rem;
+
+}
+
+header nav ul{
+	align-self: center;
+	display: flex;
+	width: 100%;
+	padding: 0;
+	
+}
+header nav ul li{
+	cursor: pointer;
+	list-style: none;
+	padding-left: 1rem;
+	padding-right: 2rem;
+
+}
+header nav ul li a{
+	color: unset;
+	text-decoration: none;
+}
+
+
+.container{
+	padding: 5rem 2rem;
+	background-color: white;
+	border-radius: 0.435rem;
+	max-width: 800px;
+	height: 290vh;
+	margin: 2rem auto;
+	overflow: hidden;
+		position: relative;
+	z-index: 1;
+	border: 1px solid #fff;
+	padding-top: 0;
+}
+.container .googleform-container{
+	position: relative;
+	z-index: 1;
+}
+.container .googleform-container iframe{
+	height: 290vh;
+	width: 100%;
+}
+.container svg.top-image{
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	width: 100%;
+	margin-left: -2rem;
+
+}
+.container svg.bottom-image{
+	position: absolute;
+	z-index: 0;
+	bottom: 0;
+	width: 100%;
+	margin-left: -2rem;
+
+}
+
+.banner-top{
+	width: calc(100%+4rem);
+	background-color: black;
+	display: flex;
+	margin-left: -2rem;
+	margin-right: -2rem;
+	justify-content: center;
+	align-items: center;
+
+}
+.banner-top .banner-ieee-logo{
+	width: 100%;
+}
+.banner-top .banner-ieee-logo img{
+	width: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 860px){
+	header{
+		font-size: 0.8em;
+		padding-left: 0.1rem;
+	}
+	header nav ul li{
+		padding-right: 0.5rem;
+	}
+}
+
+@media only screen and (max-width: 860px){
+	.container{
+		max-width: 100%;
+		border: none;
+		border-radius: unset;
+		padding: 5px;
+		margin-top: 0;
+
+	}
+	.container svg.top-image{
+		width: 100vw;
+		margin-left: -5px;
+
+	}
+	.container svg.bottom-image{
+		width: 100vw;
+		margin-left: -5px;
+
+	}
+	.input-container{
+		flex-direction: column;
+	}
+	.input-container .input-row{
+		flex-direction: column;
+	}
+	.col-5{
+		flex: 0 0 100%;
+		max-width: 100% !important;
+	}
+	input{
+		width: 100%;
+	}
+	.button-container{
+		padding-top: 3rem;
+	}
+	.radio-input{
+		display: inline-block;
+		align-items: center;
+		justify-content: space-around;
+	}
+	.radio-input-row{
+		display: block;
+	}
+	.container{
+		height: 252vh;
+	}
+	.container .googleform-container{
+		position: relative;
+		z-index: 1;
+		display: flex;
+	}
+	.container .googleform-container iframe{
+		height: 250vh;
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 320px){
+	.container{
+		height: 290vh;
+	}
+	.container .googleform-container{
+		position: relative;
+		z-index: 1;
+		display: flex;
+	}
+	.container .googleform-container iframe{
+		height: 290vh;
+		width: 100%;
+	}
+}

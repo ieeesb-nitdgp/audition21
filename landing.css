@@ -1,0 +1,288 @@
+body{
+	background-color: transparent;
+	
+}
+.flex-box{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+.col-4{
+	flex: 0 0 40%;
+	max-width: 40%;
+}
+.col-6{
+	flex: 0 0 60%;
+	max-width: 60%;
+}
+.landing{
+	width: 100%;
+	height: 100vh;
+  	background-size:cover;
+  	display: flex;
+  	background-color: transparent;
+  	flex-direction: column;
+}
+.landing .landing-bg-graphics{
+	position: absolute;
+	right: 10px;
+	width: 80%;
+	z-index: -1;
+	margin-top: 28%;
+	opacity: 0.5;
+}
+.landing .landing-bg-graphics svg{
+	width: 100%;
+
+}
+.text-main{
+	width: 100%;
+	min-height: 30%;
+	display: flex;
+	align-items: center;
+}
+
+.text-main .logo-ieee {
+  
+  width: 60%;
+  margin: 0;
+  margin-left: 4rem;
+  margin-top: 2rem;
+  padding: 2rem;
+  color: #fff;
+  user-select: none;
+  font-size: 5em;
+  font-weight: 400;
+  color: #000;
+}
+.langing-graphics{
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	
+}
+.button-box{
+	width: 30%;
+	margin-left: 4rem;
+}
+
+.btn{
+	padding: 0.5em 1em;
+	font-size: 1.1em;
+	border: none;
+	border-radius: 0.435rem;
+	background-color: black;
+	color: #fff;
+	cursor: pointer;
+}
+.button-box p{
+	font-size: 2em;
+}
+.landing-graphics .small-screen{
+	display: block;
+}
+.landing-graphics .big-screen{
+	display: block;
+}
+
+@media only screen and (min-width: 1040px){
+	.langing-graphics{
+	}
+  .text-main .logo-ieee{
+  	width: 40%;
+  }
+
+}
+@media only screen and (max-width: 860px){
+	header{
+		font-size: 0.8em;
+	}
+	header nav ul li{
+		padding-right: 0.5rem;
+	}
+	.button-box{
+		width: 90%;
+		margin-left: 1rem;
+	}
+	.button-box p{
+		font-size: 2em;
+	}
+	.button-box .btn{
+		margin-top: 1rem;
+	}
+	.flex-box{
+		flex-direction: column;
+	}
+	.text-main .logo-ieee{
+		font-size: 3.5rem;
+		margin-left: 0;
+		margin-top: 0;
+	}
+	.landing-graphics .small-screen{
+		display: block;
+	}
+	.landing-graphics .big-screen{
+		display: none;
+	}
+	.landing .landing-bg-graphics{
+		position: absolute;
+		right: 0px;
+		width: 100%;
+		z-index: -1;
+		margin-top: 60vh;
+		opacity: 0.5;
+	}
+	.col-4{
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+	.col-6{
+		flex: 0 0 100%;
+		max-width: 100%;
+		width: 100%;
+	}
+	.join-us .col-4 img{
+		width: 100%;
+	}
+	.join-us{
+		display: flex;
+		flex-direction: column-reverse;
+	}
+}
+
+
+
+.container-chevron{
+	width: 100%;
+	display: flex;
+	padding: 3rem 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+.container-chevron .wrapper{
+	position: relative;
+	height: 80px;
+	width: 4em;
+	padding: auto;
+	padding-left: 1.5em;
+	text-align: center;
+}
+
+.chevron {
+  position: absolute;
+  width: 28px;
+  height: 8px;
+  opacity: 0;
+  transform: scale3d(0.5, 0.5, 0.5);
+  animation: move 3s ease-out infinite;
+}
+
+.chevron:first-child {
+  animation: move 3s ease-out 1s infinite;
+}
+
+.chevron:nth-child(2) {
+  animation: move 3s ease-out 2s infinite;
+}
+
+.chevron:before,
+.chevron:after {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 51%;
+  background: #000;
+}
+
+.chevron:before {
+  left: 0;
+  transform: skew(0deg, 30deg);
+}
+
+.chevron:after {
+  right: 0;
+  width: 50%;
+  transform: skew(0deg, -30deg);
+}
+@keyframes move {
+  25% {
+    opacity: 1;
+
+  }
+  33% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+  67% {
+    opacity: 1;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+  }
+}
+
+.text {
+  display: block;
+  font-size: 12px;
+  color: #000;
+  text-transform: uppercase;
+  white-space: nowrap;
+  opacity: .8;
+}
+
+
+
+
+
+.join-us{
+	background-color: #efefef;
+	min-height: 90vh;
+	padding: 2rem 1rem;
+}
+.heading{
+	font-size: 2.6em;
+	font-weight: 400;
+}
+.join-us .content{
+	padding: 2rem;
+	padding-left: 3rem;
+	font-size: thin;
+	font-size: 1.1em;
+	padding-bottom: 0.5rem;
+	margin-bottom: 0;
+}
+.join-us ul.domains{
+	margin-top: 0;
+	font-size: 1.1em;
+	padding-left: 4.5rem;
+}
+
+.footer{
+	background-color: #add8e6;
+	margin:0;
+	padding-top: 1rem;
+	border-top: 1px solid #fff;
+}
+.footer ul{
+	margin: 0;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+.footer ul li{
+	width: 20%;
+	list-style: none;
+}
+.footer ul li a{
+	color: #000;
+}
+.footer ul li a svg{
+	width: 100%;
+}
