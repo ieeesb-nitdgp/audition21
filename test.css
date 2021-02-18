@@ -57,7 +57,7 @@ header nav ul li a{
 	background-color: white;
 	border-radius: 0.435rem;
 	max-width: 800px;
-	height: 290vh;
+	height: 400vh;
 	margin: 2rem auto;
 	overflow: hidden;
 		position: relative;
@@ -70,7 +70,7 @@ header nav ul li a{
 	z-index: 1;
 }
 .container .googleform-container iframe{
-	height: 290vh;
+	height: 340vh;
 	width: 100%;
 }
 .container svg.top-image{
