@@ -106,7 +106,19 @@ header nav ul li a{
 .banner-top .banner-ieee-logo img{
 	width: 100%;
 }
-
+.end-container{
+	margin: 0 auto;
+	text-align: center;
+	padding: 4rem  2rem;
+	background-color: rgba(255,255,255,0.98);
+	color: black;
+	font-size: 1.9em;
+	font-weight: 200;
+}
+.end-container .heading-1{
+	font-size: 1.5em;
+	font-weight: 300;
+}
 
 
 
@@ -164,7 +176,7 @@ header nav ul li a{
 		display: block;
 	}
 	.container{
-		height: 252vh;
+		
 	}
 	.container .googleform-container{
 		position: relative;
@@ -181,7 +193,7 @@ header nav ul li a{
 }
 @media only screen and (max-width: 320px){
 	.container{
-		height: 290vh;
+		
 	}
 	.container .googleform-container{
 		position: relative;
