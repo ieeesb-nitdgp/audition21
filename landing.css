@@ -85,6 +85,26 @@ body{
 .landing-graphics .big-screen{
 	display: block;
 }
+p.on-hover{
+	display: none;
+	position: absolute;
+	padding: 0.5rem;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 0.436rem;
+	text-align: center;
+	margin-left: -1rem;
+	text-decoration: none;
+	color: #000;
+	font-size: 0.7em !important;
+}
+.reg-btn:hover + p.on-hover{
+	display: block;
+}
+.reg-btn{
+	background-color: grey !important;
+	cursor: not-allowed !important;
+}
 
 @media only screen and (min-width: 1040px){
 	.langing-graphics{
